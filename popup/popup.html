@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>简易日历</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prev-month">←</button>
+      <h2 id="current-month">2023年10月</h2>
+      <button id="next-month">→</button>
+    </div>
+    <div class="weekdays">
+      <div>日</div>
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+      <div>六</div>
+    </div>
+    <div class="days" id="days-container"></div>
+  </div>
+  
+  <div class="event-modal" id="event-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-date">2023年10月1日</h3>
+      <textarea id="event-text" placeholder="输入今天的事项..."></textarea>
+      <button id="save-event">保存</button>
+      <button id="delete-event">删除</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
